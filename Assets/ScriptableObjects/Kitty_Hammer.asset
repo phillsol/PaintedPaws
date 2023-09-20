@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858189b0d1913124183cdd8ceab1f981, type: 3}
+  m_Name: Kitty_Hammer
+  m_EditorClassIdentifier: 
+  dialogue:
+  - characterTalking: 1
+    talkChoice: 0
+    chat:
+    - My hammer!
+    - My beautiful, radiant hammer!
+    - "How I\u2019ve missed you\u2026\nhe didn\u2019t harm you did he?"
+    - "You\u2019re never leaving me again\u2026"
+    - "Thank you for all your help\u2026"
+    - I heard from the others.
+    - We all really appreciate it.
+  - characterTalking: 0
+    talkChoice: 0
+    chat:
+    - :)

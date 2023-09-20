@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858189b0d1913124183cdd8ceab1f981, type: 3}
+  m_Name: Kitty_First
+  m_EditorClassIdentifier: 
+  dialogue:
+  - characterTalking: 1
+    talkChoice: 0
+    chat:
+    - That damn farmer...
+  - characterTalking: 0
+    talkChoice: 0
+    chat:
+    - Hello there.
+    - Were you just talking about a farmer?
+  - characterTalking: 1
+    talkChoice: 0
+    chat:
+    - Yes yes, Mr Monkey to be exact.
+    - He asked to borrow one of my tools for his work
+    - "But it\u2019s been two months and hasn't returned anything!"
+    - Please help me retrieve it from the old geezer
+    - I am far too busy myself. It would mean a lot.

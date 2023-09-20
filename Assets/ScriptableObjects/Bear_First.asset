@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 858189b0d1913124183cdd8ceab1f981, type: 3}
+  m_Name: Bear_First
+  m_EditorClassIdentifier: 
+  dialogue:
+  - characterTalking: 1
+    talkChoice: 0
+    chat:
+    - 'Oh dear,
+
+      oh dear...'
+  - characterTalking: 0
+    talkChoice: 0
+    chat:
+    - Hello sir, is everything alright?
+  - characterTalking: 1
+    talkChoice: 0
+    chat:
+    - "No.. no no\u2026\nthis isn\u2019t good\u2026 "
+    - "wait\u2026 who are you?"
+    - Are you here to steal my recipe!?
+  - characterTalking: 0
+    talkChoice: 0
+    chat:
+    - Me? No!
+    - You looked distressed so I came over.
+    - what happened?
+  - characterTalking: 1
+    talkChoice: 0
+    chat:
+    - I've lost access to my famous family recipe...
+    - That special recipe was a family heirloom...
+  - characterTalking: 0
+    talkChoice: 0
+    chat:
+    - Was it stolen?
+  - characterTalking: 1
+    talkChoice: 0
+    chat:
+    - Heavens, no!
+    - Some rascals stole the key to the safe where the recipe belonged
+    - now my trades are ruined!
+  - characterTalking: 0
+    talkChoice: 0
+    chat:
+    - "I\u2019ll see what I can do for you."

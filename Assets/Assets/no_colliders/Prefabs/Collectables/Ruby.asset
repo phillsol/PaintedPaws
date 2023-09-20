@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3edfd7f37a0fe6458e99ef4131a1d42, type: 3}
+  m_Name: Ruby
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemDescription: 
+  itemStackLimit: 10
+  itemItem: {fileID: 21300000, guid: 0e0e1471ba3d9df45a818cc5b4b31c95, type: 3}
+  itemPrefab: {fileID: 0}
+  itemNeeded:
+  - item: {fileID: 11400000, guid: c45c18efb6e31f1488f22c2bcc1dac17, type: 2}
+    itemAmount: 0
+  - item: {fileID: 11400000, guid: e646ff9bd5d596f4c9d3d60dc21784e3, type: 2}
+    itemAmount: 0
