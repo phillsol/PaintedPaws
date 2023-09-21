@@ -177,7 +177,7 @@ public class PlayerController : MonoBehaviour
         if (faceRight) { spriteRenderer.transform.localScale = new Vector3(Mathf.Lerp(spriteRenderer.transform.localScale.x, 1, Time.deltaTime * flipRate), 1, 1); }
         else { spriteRenderer.transform.localScale = new Vector3(Mathf.Lerp(spriteRenderer.transform.localScale.x, -1, Time.deltaTime * flipRate), 1, 1); }
     }
-
+    
     void SpriteSquishAndSquash()
     {
         if (playerRB.velocity.y > 0.01)

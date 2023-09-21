@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using MasayaScripts;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -35,13 +36,13 @@ public class DialogueManager : MonoBehaviour
     {
         switch (dt)
         {
-            case DialogueNode.DialogueType.dialogue:
+            case DialogueNode.DialogueType.Text:
                 ShowDialogue(d);
                 break;
-            case DialogueNode.DialogueType.choices:
+            case DialogueNode.DialogueType.MultiChoice:
 
                 break;
-            case DialogueNode.DialogueType.end:
+            case DialogueNode.DialogueType.End:
                 EndDialogue();
                 break;
         }
@@ -56,7 +57,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         dialogueObject.SetActive(false);
-        currentNPC.DialogueEnded();
+        currentNPC.FinishedDialogue();
         anim.enabled = false;
         anim.runtimeAnimatorController = null;
     }

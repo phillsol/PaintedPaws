@@ -24,7 +24,7 @@ public class CraftingItem : MonoBehaviour
         {
             itemList[i].gameObject.SetActive(true);
             itemList[i].sprite = item.item.itemItem;
-            if (IslandInventory.current.CheckItemAmount(item.item))
+            if (IslandInventory.current.CheckForItemInInventory(item.item))
             {
                 //We have it
                 itemList[i].color = Color.white;

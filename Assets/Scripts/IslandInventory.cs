@@ -70,7 +70,7 @@ public class IslandInventory : MonoBehaviour
         inventory.Add(newItem);
         return true;
     }
-    public bool CheckItemAmount(IslandItem item)
+    public bool CheckForItemInInventory(IslandItem item)
     {
         foreach(IslandItemInventoryStats i in inventory)
         {
@@ -79,10 +79,26 @@ public class IslandInventory : MonoBehaviour
                 return true;
             }
         }
-
         return false;
     }
-
+    public bool CheckItemForQuantity(IslandItem item, int amount)
+    {
+        foreach (IslandItemInventoryStats i in inventory)
+        {
+            if (i.item == item)
+            {
+                if (amount >= i.amount)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+        return false;
+    }
     public void RemoveItem(IslandItem item)
     {
         foreach (IslandItemInventoryStats i in inventory)
