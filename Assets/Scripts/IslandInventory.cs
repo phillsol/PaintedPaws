@@ -42,7 +42,7 @@ public class IslandInventory : MonoBehaviour
     }
     public bool ItemCollected(IslandItem itemPickedUp)
     {
-        Debug.Log(itemPickedUp.itemItem);
+        Debug.Log(itemPickedUp.itemSprite);
         foreach(IslandItemInventoryStats i in inventory)
         {
             if (i.item == itemPickedUp)

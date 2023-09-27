@@ -10,11 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3edfd7f37a0fe6458e99ef4131a1d42, type: 3}
-  m_Name: Conch
+  m_Name: Paint Green
   m_EditorClassIdentifier: 
-  itemName: Conch
-  itemDescription: Infused with a beautiful saturated red within the conch.
-  itemStackLimit: 10
-  itemItem: {fileID: 21300000, guid: 957355f4a508829449ca88eeca4c75bc, type: 3}
+  itemName: 
+  itemDescription: 
+  itemStackLimit: 3
+  itemSprite: {fileID: 21300000, guid: 4d76e7ecfdff5fa4e9a04cea21caa241, type: 3}
   itemPrefab: {fileID: 0}
-  itemNeeded: []
+  crushedItem: {fileID: 0}
+  itemNeeded:
+  - item: {fileID: 0}
+    itemAmount: 0
+  - item: {fileID: 0}
+    itemAmount: 0

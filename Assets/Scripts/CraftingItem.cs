@@ -12,7 +12,11 @@ public class CraftingItem : MonoBehaviour
 
     private void OnEnable()
     {
-        craftingImage.sprite = craftingItem.itemItem;
+        canCraft = true;
+
+        Debug.Log("craft inven");
+
+        craftingImage.sprite = craftingItem.itemSprite;
         if (!IslandInventory.current.CheckForRecipe(craftingItem))
         {
             craftingImage.color = Color.black;
@@ -22,8 +26,19 @@ public class CraftingItem : MonoBehaviour
         int i = 0;
         foreach(IslandItemCraftStats item in craftingItem.itemNeeded)
         {
+            Debug.Log("Craft item active");
             itemList[i].gameObject.SetActive(true);
-            itemList[i].sprite = item.item.itemItem;
+
+            print(itemList[i]);
+            print(itemList[i].sprite);
+
+            print(item);
+            print(item.item);
+            print(item.item.itemSprite);
+
+
+
+            itemList[i].sprite = item.item.itemSprite;
             if (IslandInventory.current.CheckForItemInInventory(item.item))
             {
                 //We have it
@@ -39,6 +54,8 @@ public class CraftingItem : MonoBehaviour
 
     public void Craft()
     {
+        Debug.Log("Test");
+        
         if (!canCraft)
         {
             Debug.Log("Can't Craft");

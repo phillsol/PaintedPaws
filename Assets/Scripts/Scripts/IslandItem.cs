@@ -9,7 +9,7 @@ public class IslandItem : ScriptableObject
     [TextArea]
     public string itemDescription;
     public int itemStackLimit;
-    public Sprite itemItem;
+    public Sprite itemSprite;
     public GameObject itemPrefab;
     public IslandItem crushedItem;
     [NonReorderable]
