@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3edfd7f37a0fe6458e99ef4131a1d42, type: 3}
   m_Name: Paint Blue
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: Blue Paint
   itemDescription: 
   itemStackLimit: 3
-  itemSprite: {fileID: 21300000, guid: 76cc174725da60e4686b493505140bc5, type: 3}
+  itemItem: {fileID: 21300000, guid: f0e3395695611eb4b8552ef7ac078421, type: 3}
   itemPrefab: {fileID: 0}
   crushedItem: {fileID: 0}
   itemNeeded:
-  - item: {fileID: 0}
-    itemAmount: 0
-  - item: {fileID: 0}
-    itemAmount: 0
+  - item: {fileID: 11400000, guid: 5f73fb1f2d81b9249a82cfb3318c2be3, type: 2}
+    itemAmount: 1
+  - item: {fileID: 11400000, guid: 8ba63e4beaba4ef4db45a8a15cc7e6a8, type: 2}
+    itemAmount: 1

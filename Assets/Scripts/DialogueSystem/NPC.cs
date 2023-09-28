@@ -172,6 +172,18 @@ namespace MasayaScripts
             playerFound = false;
             isTalking = false;
         }
+        public void AddItem(IslandItem item)
+        {
+            IslandInventory.current.ItemCollected(item);
+        }
+        public void AddRecipe(IslandItem item)
+        {
+            IslandInventory.current.AddRecipe(item);
+        }
+        public void RemoveItem(IslandItem item)
+        {
+            IslandInventory.current.RemoveItem(item);
+        }
     }
 }
 

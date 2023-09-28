@@ -5,11 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "new Item", menuName = "new Item")]
 public class IslandItem : ScriptableObject
 {
+    public bool isQuestItem;
     public string itemName;
     [TextArea]
     public string itemDescription;
     public int itemStackLimit;
-    public Sprite itemSprite;
+    public Sprite itemItem;
     public GameObject itemPrefab;
     public IslandItem crushedItem;
     [NonReorderable]

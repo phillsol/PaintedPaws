@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3edfd7f37a0fe6458e99ef4131a1d42, type: 3}
+  m_Name: Pigment Brown
+  m_EditorClassIdentifier: 
+  itemName: Brown Pigment
+  itemDescription: 
+  itemStackLimit: 3
+  itemItem: {fileID: 21300000, guid: ab422f0a05bf9a1478b0634dd6b52485, type: 3}
+  itemPrefab: {fileID: 0}
+  crushedItem: {fileID: 0}
+  itemNeeded:
+  - item: {fileID: 11400000, guid: 5f73fb1f2d81b9249a82cfb3318c2be3, type: 2}
+    itemAmount: 1
+  - item: {fileID: 11400000, guid: fd61c551b6564be45a48305ef0eb06b2, type: 2}
+    itemAmount: 1
+  - item: {fileID: 11400000, guid: 4d987729d2d920f42b304361d88cee67, type: 2}
+    itemAmount: 1
+  - item: {fileID: 11400000, guid: 74911a69b29c8d74495a87c1f5f7bf96, type: 2}
+    itemAmount: 1

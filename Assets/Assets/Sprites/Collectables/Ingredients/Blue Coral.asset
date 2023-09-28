@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Blue Coral
   itemDescription: 
   itemStackLimit: 2
-  itemSprite: {fileID: 21300000, guid: 3516b19629e777e43ad6e8128f89eb73, type: 3}
+  itemItem: {fileID: 21300000, guid: 3516b19629e777e43ad6e8128f89eb73, type: 3}
   itemPrefab: {fileID: 0}
   crushedItem: {fileID: 0}
   itemNeeded: []

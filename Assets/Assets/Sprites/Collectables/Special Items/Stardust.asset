@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3edfd7f37a0fe6458e99ef4131a1d42, type: 3}
+  m_Name: Stardust
+  m_EditorClassIdentifier: 
+  itemName: 
+  itemDescription: 
+  itemStackLimit: 1
+  itemItem: {fileID: 21300000, guid: facb209e041c6b74ab7c00b211f67132, type: 3}
+  itemPrefab: {fileID: 0}
+  crushedItem: {fileID: 0}
+  itemNeeded: []

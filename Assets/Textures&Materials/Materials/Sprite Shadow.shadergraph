@@ -775,7 +775,7 @@
             "serializedVersion": "2",
             "x": -725.0,
             "y": 163.0,
-            "width": 116.00000762939453,
+            "width": 105.0,
             "height": 34.0
         }
     },
@@ -1114,7 +1114,7 @@
     "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Texture2D_97f832e3db3744f1aa1394cae928aff4",
     "m_OverrideReferenceName": "_MainTex",
-    "m_GeneratePropertyBlock": true,
+    "m_GeneratePropertyBlock": false,
     "m_UseCustomSlotLabel": false,
     "m_CustomSlotLabel": "",
     "m_Precision": 0,

@@ -15,11 +15,11 @@ MonoBehaviour:
   itemName: Yellow Paint
   itemDescription: paint
   itemStackLimit: 3
-  itemSprite: {fileID: 21300000, guid: 9818c379b3af2e1448a02ad95cf4bfc4, type: 3}
+  itemItem: {fileID: 21300000, guid: 8b412f4fde1e1eb499e60d013c4e4a72, type: 3}
   itemPrefab: {fileID: 0}
   crushedItem: {fileID: 0}
   itemNeeded:
   - item: {fileID: 11400000, guid: 5f73fb1f2d81b9249a82cfb3318c2be3, type: 2}
     itemAmount: 1
-  - item: {fileID: 11400000, guid: da377d8447fed45448eed467f1dffa60, type: 2}
+  - item: {fileID: 11400000, guid: 9fb8847e1eb30d44ea33d51905c613c7, type: 2}
     itemAmount: 1

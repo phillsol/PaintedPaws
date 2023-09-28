@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: 
   itemDescription: 
   itemStackLimit: 3
-  itemSprite: {fileID: 21300000, guid: c56655c15d2fea6498f43632a2e453a3, type: 3}
+  itemItem: {fileID: 21300000, guid: 01c07254fbc791c4abf3523ee98cbb65, type: 3}
   itemPrefab: {fileID: 0}
   crushedItem: {fileID: 0}
   itemNeeded:

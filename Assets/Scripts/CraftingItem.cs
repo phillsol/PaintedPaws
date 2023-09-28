@@ -12,11 +12,18 @@ public class CraftingItem : MonoBehaviour
 
     private void OnEnable()
     {
-        canCraft = true;
+        ResetVisuals();
+        CraftingManager.current.onItemCrafted += ResetVisuals;
+    }
 
-        Debug.Log("craft inven");
+    private void OnDisable()
+    {
+        CraftingManager.current.onItemCrafted -= ResetVisuals;
+    }
 
-        craftingImage.sprite = craftingItem.itemSprite;
+    public void ResetVisuals()
+    {
+        craftingImage.sprite = craftingItem.itemItem;
         if (!IslandInventory.current.CheckForRecipe(craftingItem))
         {
             craftingImage.color = Color.black;
@@ -24,21 +31,11 @@ public class CraftingItem : MonoBehaviour
         }
 
         int i = 0;
-        foreach(IslandItemCraftStats item in craftingItem.itemNeeded)
+        canCraft = true;
+        foreach (IslandItemCraftStats item in craftingItem.itemNeeded)
         {
-            Debug.Log("Craft item active");
             itemList[i].gameObject.SetActive(true);
-
-            print(itemList[i]);
-            print(itemList[i].sprite);
-
-            print(item);
-            print(item.item);
-            print(item.item.itemSprite);
-
-
-
-            itemList[i].sprite = item.item.itemSprite;
+            itemList[i].sprite = item.item.itemItem;
             if (IslandInventory.current.CheckForItemInInventory(item.item))
             {
                 //We have it
@@ -46,6 +43,7 @@ public class CraftingItem : MonoBehaviour
             }
             else
             {
+                itemList[i].color = Color.black;
                 canCraft = false;
             }
             i++;
@@ -54,8 +52,6 @@ public class CraftingItem : MonoBehaviour
 
     public void Craft()
     {
-        Debug.Log("Test");
-        
         if (!canCraft)
         {
             Debug.Log("Can't Craft");
@@ -72,6 +68,7 @@ public class CraftingItem : MonoBehaviour
                 Debug.Log("Remove Item");
             }
             Debug.Log("Crafted");
+            CraftingManager.current.ItemCrafted();
         }
         else
         {
